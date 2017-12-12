@@ -1,0 +1,52 @@
+// @import 'reset';
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: $lightGray;
+}
+
+#sideMenu {
+  background: $lightPurple;
+  max-width: 280px;
+  width: 280px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  nav {
+    padding-top: 100px;
+    a {
+      display: block;
+      color: $darkGray;
+      padding: 20px;
+      text-decoration: none;
+      padding: 15px 30px;
+      font-weight: 300;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background: $darkPurple;
+        border-left: 5px solid $neonGreen;
+        padding: 15px 50px;
+      }
+      .fa {
+        color: $neonGreen;
+        font-size: 1.4rem;
+        width: 30px;
+        display: inline-block;
+        margin-right: 0.8rem;
+        position: relative;
+        top: 2px;
+      }
+      &.active {
+        background: $darkPurple;
+        border-left: 5px solid $neonGreen;
+        padding: 15px 30px 15px 25px;
+      }
+    }
+  }
+}
