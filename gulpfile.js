@@ -13,7 +13,8 @@ const reload = browserSync.reload;
 
 gulp.task('browser-sync', function() {
     browserSync({
-        server: './public'
+        server: './public',
+        notify: false
     });
 });
 

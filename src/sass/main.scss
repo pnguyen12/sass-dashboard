@@ -50,3 +50,79 @@ body {
     }
   }
 }
+
+header {
+  margin-left: 280px;
+  padding: 20px;
+  background: #fff;
+  .search-area {
+    display: inline-block;
+    .fa {
+      color: $darkGray;
+    }
+    input[type="text"] {
+      background: transparent;
+      outline: none;
+      border: none;
+      font-size: 1.3rem;
+      color: $neonGreen;
+      padding: 10px;
+      font-weight: 100;
+      width: 500px;
+
+    }
+  }
+  .user-area {
+    display: inline-block;
+    float: right;
+    
+    a {
+      &.add {
+        font-size: 17px;
+        font-weight: 500;
+        padding-top: 4px;
+        
+      }
+      display: inline-block;
+      padding-right: 20px;
+      text-decoration: none;
+      height: 30px;
+      vertical-align: top;
+      &.notification {
+        position: relative;
+        font-size: 20px;
+        padding-top: 5px;
+        .circle {
+          width: 14px;
+          height: 14px;
+          background: red;
+          font-size: 13px;
+          color: white;
+          border-radius: 50%;
+          text-align: center;
+          display: inline-block;
+          position: absolute;
+          top: 3px;;
+          left: 7px;
+        }
+      }
+      .user-image {
+         background: url(https://pbs.twimg.com/profile_images/912277344152440832/8xWfh0KR_400x400.jpg) no-repeat center center; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          width: 26px;
+          height: 26px;
+          display: inline-block;
+          border-radius: 50%;
+          margin-right: 10px;
+      }
+      .fa-caret-down {
+        position: relative;
+        top: -6px;
+      }
+    }
+  }
+
+}
